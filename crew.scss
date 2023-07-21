@@ -1,0 +1,97 @@
+body{
+    background-image: url('../starter-code/assets/crew/background-crew-desktop.jpg');
+}
+.slide-container{
+    width: 80%;
+    .slide-content{
+        .card-wrapper{
+            .card{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10rem;
+                .image-content{
+                    flex: 5;
+                    // margin-top: 10px;
+                    padding: 1rem;
+                    h1{
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        span{
+                            color: rgb(173, 171, 171);
+                        }
+                    }
+                    h2{
+                        font-weight: 400;
+                    }
+                    p{
+                        color: rgb(158, 157, 157);
+                        line-height: 30px;
+                        margin-bottom: 20px;
+                    }
+                    div{
+                        display: flex;
+                        gap: 10px;
+                        span{
+                            padding: .5rem;
+                            width: 1px;
+                            height: 1px;
+                            border-radius: 50%;
+                            background-color: rgb(148, 148, 148);
+                        }
+                        .cur{
+                            background-color: white;
+                        }
+                    }
+                }
+                .card-content{
+                    flex: 7;
+                    img{
+                        height: 430px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (max-width: 640px){
+    body{
+        background-image: url('../starter-code/assets/crew/background-crew-mobile.jpg');
+    }
+    .slide-container{
+        width: 90%;
+        .slide-content{
+            .card-wrapper{
+                .card{
+                    flex-direction: column-reverse;
+                    .image-content{
+                        h1{
+                            position: absolute;
+                            top: 10px;
+                        }
+                        h2{
+                            margin-top: -100px;
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                        div{
+                            position: absolute;
+                            top: 66%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    .card-content{
+                        margin-top: 50px;
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}

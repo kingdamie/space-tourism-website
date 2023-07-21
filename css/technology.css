@@ -1,0 +1,236 @@
+body {
+  background-image: url("../starter-code/assets/technology/background-technology-desktop.jpg");
+}
+
+.launch .note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.launch .note .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.launch .note .space .head {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  text-transform: uppercase;
+}
+
+.launch .note .space .head span {
+  color: #666666;
+}
+
+.launch .note .space .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.launch .note .space .action .btn {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+}
+
+.launch .note .space .action .btn .btn-num.active {
+  background-color: white;
+  color: black;
+}
+
+.launch .note .space .action .btn .btn-num {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  margin-left: 4rem;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+.launch .note .space .action .btn .btn-num:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.launch .note .space .action .word {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.launch .note .space .action .word h4 {
+  color: #979797;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.launch .note .space .action .word h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.launch .note .space .action .word p {
+  color: #cacaca;
+  width: 70%;
+  line-height: 25px;
+}
+
+.launch .note .pic {
+  margin-top: 30px;
+  padding: 1rem;
+}
+
+.launch .note .pic img {
+  height: 400px;
+  width: 500px;
+}
+
+.launch .note .pic .hidden {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-image: url("../starter-code/assets/technology/background-technology-mobile.jpg");
+  }
+  .launch .note {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .launch .note .space {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .launch .note .space .head {
+    letter-spacing: 2px;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    text-transform: uppercase;
+  }
+  .launch .note .space .head span {
+    color: #666666;
+  }
+  .launch .note .space .action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .launch .note .space .action .btn {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .launch .note .space .action .btn .btn-num.active {
+    background-color: white;
+    color: black;
+  }
+  .launch .note .space .action .btn .btn-num {
+    margin-left: 1rem;
+  }
+  .launch .note .space .action .btn .btn-num:hover {
+    background-color: white;
+    color: black;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+  .launch .note .space .action .word {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+    text-align: center;
+  }
+  .launch .note .space .action .word h4 {
+    color: #979797;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  .launch .note .space .action .word h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .launch .note .space .action .word p {
+    color: #cacaca;
+    width: 100%;
+    line-height: 25px;
+  }
+  .launch .note .pic {
+    margin-top: 30px;
+    padding: 1rem;
+  }
+  .launch .note .pic img {
+    height: 100%;
+    width: 100%;
+  }
+  .launch .note .pic .show {
+    display: none;
+  }
+  .launch .note .pic .hidden {
+    display: block;
+  }
+}
+/*# sourceMappingURL=technology.css.map */
